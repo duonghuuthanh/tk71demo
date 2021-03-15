@@ -20,7 +20,10 @@ namespace Demo
         {
             if (textBox1.Text != "" && textBox2.Text != "")
             {
+                int a = int.Parse(textBox1.Text);
+                int b = int.Parse(textBox2.Text);
 
+                MessageBox.Show(Calculator.chia(a, b).ToString());
             }
         }
     }
